@@ -1,0 +1,58 @@
+body {
+    background-color: grey;
+}
+
+.teteje{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fejlec {
+    background-color: aqua;
+    width: 100%;
+    font-size: 60px;
+}
+
+.tartalom {
+    
+}
+
+.lablec {
+
+}
+.kereso{
+    width: 100%;
+    max-width: 700px;
+    background-color: white;
+    align-items: center;
+    display:flex;
+    border-radius: 25px;
+    padding: 10px 50px;    
+}
+
+.kereso input{
+    border:0;
+    background: transparent;
+    flex:1;
+    outline:none;
+    font-size: larger;
+    padding: 10px 0px;
+    color: black
+}
+
+::placeholder{
+    color:black;
+}
+
+.kereso button img{
+    width: 30px;
+    height: 30px;
+}
+.kereso button{
+    border:none;
+    background-color: white;
+ 
+    cursor:pointer;
+}

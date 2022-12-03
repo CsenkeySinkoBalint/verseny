@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportelosztó</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="teteje">
+        <form class="kereso">
+            <input type="search" placeholder="Keressen sportokra" value="" id="search" onchange="openPage()" list="input">
+            <button type="submit" ><img src="kereso.png"></button>
+        </form>
+        <datalist id="input">
+            <option value="m4">m4</option>
+            <option value="rögbi">rögbi</option>
+            <option value="karate">karate</option>
+            <option value="labdarúgás">labdarúgás</option>
+            <option value="kosárlabda">kosárlabda</option>
+            <option value="kézilabda">kézilabda </option>     
+        </datalist>
+        <script>
+            function openPage() {
+                var x = document.getElementById("search").value;
+                if (x === "m4"){
+                    window.open("https://m4sport.hu/elo");
+                }
+                if (x === "kézilabda")
+                    window.open("https://www.mksz.hu");
+                if (x === "labdarúgás")
+                    window.open("https://www.mlsz.hu");
+                if (x === "kosárlabda")
+                    window.open("https://www.hunbasket.hu");
+                if (x === "karate")
+                    window.open("https://www.karate.hu");
+                if (x === "rögbi")
+                    window.open("https://rugbyhungary.eu");
+            }
+        </script>
+    </div>
+</body>
+</html>
